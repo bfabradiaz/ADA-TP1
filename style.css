@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: 10px; }
+
+.logo-ada {
+  width: 67px;
+  height: 40px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.menu {
+  width: 500px;
+  height: 40px; }
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none; }
+
+ul li a {
+  color: #004289;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 634px;
+  background-color: #1445B3; }
+
+.texto-header {
+  width: 555px;
+  height: 256px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px; }
+
+.img-header {
+  width: 555px;
+  height: 315px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.boton {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px; }
