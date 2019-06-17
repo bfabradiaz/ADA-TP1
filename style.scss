@@ -36,6 +36,15 @@ $font-family-titulos: 'Montserrat', sans-serif;
     margin: 15px 15px 15px 15px;
 }
 
+@mixin fotoRedonda{
+    width: 255px;
+    height: 255px;
+    border-radius: 127.5px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -264,5 +273,24 @@ img{
         color: #444444;
         font-family: $font-family-titulos;
         font-size: 15px;
-    }
+    };
+    .fotos-Circulares{
+        @include flex();
+        .foto-Redonda-1{
+            @include fotoRedonda();
+            background-image: url("img/team-01.jpg");            
+        };
+        .foto-Redonda-2{
+            @include fotoRedonda();
+            background-image: url("img/team-02.jpg");            
+        };
+        .foto-Redonda-3{
+            @include fotoRedonda();
+            background-image: url("img/team-03.jpg");            
+        };
+        .foto-Redonda-4{
+            @include fotoRedonda();
+            background-image: url("img/team-04.jpg");            
+        };
+    };
 };

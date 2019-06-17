@@ -257,3 +257,39 @@ img {
     color: #444444;
     font-family: "Montserrat", sans-serif;
     font-size: 15px; }
+  .team .fotos-Circulares {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .team .fotos-Circulares .foto-Redonda-1 {
+      width: 255px;
+      height: 255px;
+      border-radius: 127.5px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 15px;
+      background-image: url("img/team-01.jpg"); }
+    .team .fotos-Circulares .foto-Redonda-2 {
+      width: 255px;
+      height: 255px;
+      border-radius: 127.5px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 15px;
+      background-image: url("img/team-02.jpg"); }
+    .team .fotos-Circulares .foto-Redonda-3 {
+      width: 255px;
+      height: 255px;
+      border-radius: 127.5px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 15px;
+      background-image: url("img/team-03.jpg"); }
+    .team .fotos-Circulares .foto-Redonda-4 {
+      width: 255px;
+      height: 255px;
+      border-radius: 127.5px;
+      background-size: cover;
+      background-position: center;
+      margin: 20px 15px;
+      background-image: url("img/team-04.jpg"); }
