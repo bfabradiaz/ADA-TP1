@@ -193,9 +193,9 @@ img{
         justify-content: center;
         width: 80%;
         margin: auto;
-        margin-top: 30px;
+        margin-top: 50px;
         .foto-Redonda{
-            width: 20%;
+            width: 25%;
             display: flex;
             justify-content: flex-end;
             margin-right: 25px;
@@ -210,7 +210,7 @@ img{
             };
         };
         .testimonials-Texts{
-            width: 55%;
+            width: 65%;
             .testimonial-Title{
                 font-family: $font-family-titulos;
                 font-size: 20px;
@@ -227,13 +227,42 @@ img{
             .testimonial-Paragraph{
                 width: 584px;
                 font-family: $font-family-parrafo;
-                font-size: 15px;
+                font-size: 16px;
                 font-style: italic;
                 color: #444444;
                 line-height: 24px;
                 margin-top: 15px;
-                font-weight: 300;
+                font-weight: 400;
             };
         };
     };
+    .changeTestimonials{
+        @include flex();
+        margin: 30px 0 50px 0;
+        .butonChange{
+            width: 12px;
+            height: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 6px;
+            margin: 0 7px 0 7px;
+        };
+    };
+};
+
+.team{
+    background-color: #FFFFFF;
+    .titulos{
+        @include titulos();
+        color: #444444;
+        margin-top: 30px;
+    };
+    .subtitles-Team{
+        width: 584px;
+        margin: 30px auto;
+        text-align: center;
+        color: #444444;
+        font-family: $font-family-titulos;
+        font-size: 15px;
+    }
 };
