@@ -1,6 +1,7 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .container-nav {
   display: flex;
@@ -79,7 +80,8 @@ img {
     margin-top: 20px; }
   .portfolio-1 .button-Small {
     text-align: center;
-    margin-top: 30px; }
+    margin-top: 20px;
+    margin-bottom: 15px; }
     .portfolio-1 .button-Small .button-Small-Details {
       font-family: "Open Sans", sans-serif;
       line-height: 20px;
@@ -94,3 +96,17 @@ img {
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       border: none; }
+
+.portfolio-Info {
+  width: 80%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 10% 0 10%; }
+  .portfolio-Info .portfolio-Info-1 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-color: red;
+    margin: 15px 15px 15px 15px; }

@@ -30,6 +30,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container-nav{
@@ -105,7 +106,8 @@ img{
     } 
     .button-Small{
         text-align: center;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 15px;
         .button-Small-Details{
             font-family: $font-family-parrafo;
             line-height: 20px;
@@ -123,3 +125,19 @@ img{
         }
     }   
 }   
+
+.portfolio-Info{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+    .portfolio-Info-1{
+        width: 30%;
+        height: 250px;
+        border-radius: 6px;
+        background-color: red;
+        margin: 15px 15px 15px 15px;
+    }
+}
