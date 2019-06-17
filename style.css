@@ -108,5 +108,7 @@ img {
     width: 30%;
     height: 250px;
     border-radius: 6px;
-    background-color: red;
+    background-image: url("img/portfolio/app1.jpg");
+    background-size: cover;
+    background-position: center;
     margin: 15px 15px 15px 15px; }
