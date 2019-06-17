@@ -108,7 +108,71 @@ img {
     width: 30%;
     height: 250px;
     border-radius: 6px;
-    background-image: url("img/portfolio/app1.jpg");
     background-size: cover;
     background-position: center;
-    margin: 15px 15px 15px 15px; }
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/app1.jpg"); }
+  .portfolio-Info .portfolio-Info-2 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/web3.jpg"); }
+  .portfolio-Info .portfolio-Info-3 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/app2.jpg"); }
+  .portfolio-Info .portfolio-Info-4 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/card2.jpg"); }
+  .portfolio-Info .portfolio-Info-5 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/web2.jpg"); }
+  .portfolio-Info .portfolio-Info-6 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/app3.jpg"); }
+  .portfolio-Info .portfolio-Info-7 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/card1.jpg"); }
+  .portfolio-Info .portfolio-Info-8 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/card3.jpg"); }
+  .portfolio-Info .portfolio-Info-9 {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+    background-image: url("img/portfolio/web1.jpg"); }

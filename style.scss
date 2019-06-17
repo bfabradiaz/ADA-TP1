@@ -27,6 +27,15 @@ $font-family-titulos: 'Montserrat', sans-serif;
     text-align: center;
 }
 
+@mixin portfolio {
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+}
+
 *{
     margin:0;
     padding: 0;
@@ -134,12 +143,39 @@ img{
     flex-wrap: wrap;
     margin: 0 10% 0 10%;
     .portfolio-Info-1{
-        width: 30%;
-        height: 250px;
-        border-radius: 6px;
+        @include portfolio();
         background-image: url("img/portfolio/app1.jpg");
-        background-size: cover;
-        background-position: center;
-        margin: 15px 15px 15px 15px;
-    }
+    };
+    .portfolio-Info-2{
+        @include portfolio();
+        background-image: url("img/portfolio/web3.jpg");
+    };
+    .portfolio-Info-3{
+        @include portfolio();
+        background-image: url("img/portfolio/app2.jpg");
+    };
+    .portfolio-Info-4{
+        @include portfolio();
+        background-image: url("img/portfolio/card2.jpg");
+    };
+    .portfolio-Info-5{
+        @include portfolio();
+        background-image: url("img/portfolio/web2.jpg");
+    };
+    .portfolio-Info-6{
+        @include portfolio();
+        background-image: url("img/portfolio/app3.jpg");
+    };
+    .portfolio-Info-7{
+        @include portfolio();
+        background-image: url("img/portfolio/card1.jpg");
+    };
+    .portfolio-Info-8{
+        @include portfolio();
+        background-image: url("img/portfolio/card3.jpg");
+    };
+    .portfolio-Info-9{
+        @include portfolio();
+        background-image: url("img/portfolio/web1.jpg");
+    };
 }
