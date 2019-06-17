@@ -1,5 +1,7 @@
 $letra-nav:#004289;
 $fondo-header:#1445B3;
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
 
 @mixin flex {
     display: flex;
@@ -14,8 +16,15 @@ $fondo-header:#1445B3;
     border-radius: 30px;
     background-color: rgba(255, 255, 255, 0.089);
     color: #fff;
-    font-family:'Montserrat', sans-serif;
+    font-family: $font-family-titulos;
     font-size: 15px; 
+}
+
+@mixin titulos {
+    font-family: $font-family-titulos;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
 }
 
 *{
@@ -54,7 +63,7 @@ img{
 ul li a{
     color: $letra-nav;  
     text-decoration: none; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-titulos;
 }
 
 .header{
@@ -67,7 +76,7 @@ ul li a{
     width: 555px;
     height: 256px;
     color:#fff;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-titulos;
     font-size: 35px;  
 }
 
@@ -84,3 +93,33 @@ img{
 .boton{
     @include boton;
 }
+
+.portfolio-1{
+    height: 1115px;
+    background-color: #FFFFFF;
+    padding: 60px 0 60px 0;
+    .titulos{
+        @include titulos();
+        color: #283D50;
+        margin-top: 20px;
+    } 
+    .button-Small{
+        text-align: center;
+        margin-top: 30px;
+        .button-Small-Details{
+            font-family: $font-family-parrafo;
+            line-height: 20px;
+            font-size: 12px;
+            margin: 15px 15px 15px 0;
+            text-align: center;
+            color: #007BFF;
+            background: #ecf5ff;
+            width: 60px;
+            height: 32px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+    }   
+}   

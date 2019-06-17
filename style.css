@@ -32,7 +32,7 @@ img {
 ul li a {
   color: #004289;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 .header {
   display: flex;
@@ -45,7 +45,7 @@ ul li a {
   width: 555px;
   height: 256px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 35px; }
 
 .img-header {
@@ -63,5 +63,34 @@ img {
   border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.089);
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px; }
+
+.portfolio-1 {
+  height: 1115px;
+  background-color: #FFFFFF;
+  padding: 60px 0 60px 0; }
+  .portfolio-1 .titulos {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #283D50;
+    margin-top: 20px; }
+  .portfolio-1 .button-Small {
+    text-align: center;
+    margin-top: 30px; }
+    .portfolio-1 .button-Small .button-Small-Details {
+      font-family: "Open Sans", sans-serif;
+      line-height: 20px;
+      font-size: 12px;
+      margin: 15px 15px 15px 0;
+      text-align: center;
+      color: #007BFF;
+      background: #ecf5ff;
+      width: 60px;
+      height: 32px;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      border: none; }
