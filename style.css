@@ -67,15 +67,25 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 15px; }
 
+.titulos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center; }
+
+.subtitles-Team {
+  width: 584px;
+  margin: 30px auto;
+  text-align: center;
+  color: #444444;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; }
+
 .portfolio-1 {
   height: 1115px;
   background-color: #FFFFFF;
   padding: 60px 0 60px 0; }
   .portfolio-1 .titulos {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    text-align: center;
     color: #283D50;
     margin-top: 20px; }
   .portfolio-1 .button-Small {
@@ -97,6 +107,14 @@ img {
       transition: all 0.3s ease-in-out;
       border: none; }
 
+.portfolio-Info-Imagen {
+  width: 30%;
+  height: 250px;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  margin: 15px 15px 15px 15px; }
+
 .portfolio-Info {
   width: 80%;
   height: 800px;
@@ -104,77 +122,23 @@ img {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 10% 0 10%; }
-  .portfolio-Info .portfolio-Info-1 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-1 {
     background-image: url("img/portfolio/app1.jpg"); }
-  .portfolio-Info .portfolio-Info-2 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-2 {
     background-image: url("img/portfolio/web3.jpg"); }
-  .portfolio-Info .portfolio-Info-3 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-3 {
     background-image: url("img/portfolio/app2.jpg"); }
-  .portfolio-Info .portfolio-Info-4 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-4 {
     background-image: url("img/portfolio/card2.jpg"); }
-  .portfolio-Info .portfolio-Info-5 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-5 {
     background-image: url("img/portfolio/web2.jpg"); }
-  .portfolio-Info .portfolio-Info-6 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-6 {
     background-image: url("img/portfolio/app3.jpg"); }
-  .portfolio-Info .portfolio-Info-7 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-7 {
     background-image: url("img/portfolio/card1.jpg"); }
-  .portfolio-Info .portfolio-Info-8 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-8 {
     background-image: url("img/portfolio/card3.jpg"); }
-  .portfolio-Info .portfolio-Info-9 {
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
+  .portfolio-Info #portfolio-Info-9 {
     background-image: url("img/portfolio/web1.jpg"); }
 
 .testimonials {
@@ -182,10 +146,6 @@ img {
   background-color: #ECF5FF;
   padding: 60px 0 60px 0; }
   .testimonials .titulos {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    text-align: center;
     color: #444444; }
   .testimonials .testimonials-Columns {
     display: flex;
@@ -241,55 +201,66 @@ img {
       border-radius: 6px;
       margin: 0 7px 0 7px; }
 
+.fotoRedonda {
+  width: 255px;
+  height: 255px;
+  border-radius: 127.5px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px 15px; }
+
 .team {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  margin: 50px 0; }
   .team .titulos {
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    text-align: center;
     color: #444444;
     margin-top: 30px; }
-  .team .subtitles-Team {
-    width: 584px;
-    margin: 30px auto;
-    text-align: center;
-    color: #444444;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px; }
   .team .fotos-Circulares {
     display: flex;
     justify-content: center;
     align-items: center; }
-    .team .fotos-Circulares .foto-Redonda-1 {
-      width: 255px;
-      height: 255px;
-      border-radius: 127.5px;
-      background-size: cover;
-      background-position: center;
-      margin: 20px 15px;
+    .team .fotos-Circulares #foto-Redonda-1 {
       background-image: url("img/team-01.jpg"); }
-    .team .fotos-Circulares .foto-Redonda-2 {
-      width: 255px;
-      height: 255px;
-      border-radius: 127.5px;
-      background-size: cover;
-      background-position: center;
-      margin: 20px 15px;
+    .team .fotos-Circulares #foto-Redonda-2 {
       background-image: url("img/team-02.jpg"); }
-    .team .fotos-Circulares .foto-Redonda-3 {
-      width: 255px;
-      height: 255px;
-      border-radius: 127.5px;
-      background-size: cover;
-      background-position: center;
-      margin: 20px 15px;
+    .team .fotos-Circulares #foto-Redonda-3 {
       background-image: url("img/team-03.jpg"); }
-    .team .fotos-Circulares .foto-Redonda-4 {
-      width: 255px;
-      height: 255px;
-      border-radius: 127.5px;
-      background-size: cover;
-      background-position: center;
-      margin: 20px 15px;
+    .team .fotos-Circulares #foto-Redonda-4 {
       background-image: url("img/team-04.jpg"); }
+
+.fotos-Rectangulares {
+  width: 277.25px;
+  height: 160px;
+  background-position: center;
+  padding: 64px;
+  background-repeat: no-repeat;
+  background-size: 50%; }
+
+.foto-Rectangular-All {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto; }
+  .foto-Rectangular-All #foto-Rectangular-1 {
+    background-image: url("img/clients/client-1.png"); }
+  .foto-Rectangular-All #foto-Rectangular-2 {
+    background-image: url("img/clients/client-2.png"); }
+  .foto-Rectangular-All #foto-Rectangular-3 {
+    background-image: url("img/clients/client-3.png"); }
+  .foto-Rectangular-All #foto-Rectangular-4 {
+    background-image: url("img/clients/client-4.png"); }
+  .foto-Rectangular-All #foto-Rectangular-5 {
+    background-image: url("img/clients/client-5.png"); }
+  .foto-Rectangular-All #foto-Rectangular-6 {
+    background-image: url("img/clients/client-6.png"); }
+  .foto-Rectangular-All #foto-Rectangular-7 {
+    background-image: url("img/clients/client-7.png"); }
+  .foto-Rectangular-All #foto-Rectangular-8 {
+    background-image: url("img/clients/client-8.png"); }
+
+.ourClients {
+  background-color: #ECF5FF;
+  padding: 60px 0; }
+  .ourClients .titulos {
+    color: #444444; }

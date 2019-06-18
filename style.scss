@@ -20,13 +20,6 @@ $font-family-titulos: 'Montserrat', sans-serif;
     font-size: 15px; 
 }
 
-@mixin titulos {
-    font-family: $font-family-titulos;
-    font-size: 36px;
-    font-weight: 500;
-    text-align: center;
-}
-
 @mixin portfolio {
     width: 30%;
     height: 250px;
@@ -34,15 +27,6 @@ $font-family-titulos: 'Montserrat', sans-serif;
     background-size: cover;
     background-position: center;
     margin: 15px 15px 15px 15px;
-}
-
-@mixin fotoRedonda{
-    width: 255px;
-    height: 255px;
-    border-radius: 127.5px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px 15px;
 }
 
 *{
@@ -113,12 +97,27 @@ img{
     @include boton;
 }
 
+.titulos {
+    font-family: $font-family-titulos;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.subtitles-Team{
+    width: 584px;
+    margin: 30px auto;
+    text-align: center;
+    color: #444444;
+    font-family: $font-family-titulos;
+    font-size: 15px;
+};
+
 .portfolio-1{
     height: 1115px;
     background-color: #FFFFFF;
     padding: 60px 0 60px 0;
     .titulos{
-        @include titulos();
         color: #283D50;
         margin-top: 20px;
     } 
@@ -142,7 +141,16 @@ img{
             border: none;
         }
     }   
-}   
+}  
+
+.portfolio-Info-Imagen{
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+}
 
 .portfolio-Info{
     width: 80%;
@@ -151,40 +159,31 @@ img{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 10% 0 10%;
-    .portfolio-Info-1{
-        @include portfolio();
+    #portfolio-Info-1{
         background-image: url("img/portfolio/app1.jpg");
     };
-    .portfolio-Info-2{
-        @include portfolio();
+    #portfolio-Info-2{
         background-image: url("img/portfolio/web3.jpg");
     };
-    .portfolio-Info-3{
-        @include portfolio();
+    #portfolio-Info-3{
         background-image: url("img/portfolio/app2.jpg");
     };
-    .portfolio-Info-4{
-        @include portfolio();
+    #portfolio-Info-4{
         background-image: url("img/portfolio/card2.jpg");
     };
-    .portfolio-Info-5{
-        @include portfolio();
+    #portfolio-Info-5{
         background-image: url("img/portfolio/web2.jpg");
     };
-    .portfolio-Info-6{
-        @include portfolio();
+    #portfolio-Info-6{
         background-image: url("img/portfolio/app3.jpg");
     };
-    .portfolio-Info-7{
-        @include portfolio();
+    #portfolio-Info-7{
         background-image: url("img/portfolio/card1.jpg");
     };
-    .portfolio-Info-8{
-        @include portfolio();
+    #portfolio-Info-8{
         background-image: url("img/portfolio/card3.jpg");
     };
-    .portfolio-Info-9{
-        @include portfolio();
+    #portfolio-Info-9{
         background-image: url("img/portfolio/web1.jpg");
     };
 };
@@ -194,7 +193,6 @@ img{
     background-color: #ECF5FF;
     padding: 60px 0 60px 0;
     .titulos{
-        @include titulos();
         color: #444444;
     } 
     .testimonials-Columns{
@@ -259,38 +257,85 @@ img{
     };
 };
 
+.fotoRedonda{
+    width: 255px;
+    height: 255px;
+    border-radius: 127.5px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+
 .team{
     background-color: #FFFFFF;
+    margin: 50px 0;
     .titulos{
-        @include titulos();
         color: #444444;
         margin-top: 30px;
     };
-    .subtitles-Team{
-        width: 584px;
-        margin: 30px auto;
-        text-align: center;
-        color: #444444;
-        font-family: $font-family-titulos;
-        font-size: 15px;
-    };
     .fotos-Circulares{
         @include flex();
-        .foto-Redonda-1{
-            @include fotoRedonda();
+        #foto-Redonda-1{
             background-image: url("img/team-01.jpg");            
         };
-        .foto-Redonda-2{
-            @include fotoRedonda();
+        #foto-Redonda-2{
             background-image: url("img/team-02.jpg");            
         };
-        .foto-Redonda-3{
-            @include fotoRedonda();
+        #foto-Redonda-3{
             background-image: url("img/team-03.jpg");            
         };
-        .foto-Redonda-4{
-            @include fotoRedonda();
+        #foto-Redonda-4{
             background-image: url("img/team-04.jpg");            
         };
     };
 };
+
+.fotos-Rectangulares{
+    width: 277.25px;
+    height: 160px;
+    background-position: center;
+    padding: 64px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+};
+
+.foto-Rectangular-All{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    #foto-Rectangular-1{
+        background-image: url("img/clients/client-1.png")    
+    };
+    #foto-Rectangular-2{
+        background-image: url("img/clients/client-2.png")    
+    };
+    #foto-Rectangular-3{
+        background-image: url("img/clients/client-3.png")    
+    };
+    #foto-Rectangular-4{
+        background-image: url("img/clients/client-4.png")    
+    };
+    #foto-Rectangular-5{
+        background-image: url("img/clients/client-5.png")    
+    };
+    #foto-Rectangular-6{
+        background-image: url("img/clients/client-6.png")    
+    };
+    #foto-Rectangular-7{
+        background-image: url("img/clients/client-7.png")    
+    };
+    #foto-Rectangular-8{
+        background-image: url("img/clients/client-8.png")    
+    };
+};
+    
+
+.ourClients{
+    background-color: #ECF5FF;
+    padding: 60px 0;
+    .titulos{
+        color: #444444;
+    };
+};  
