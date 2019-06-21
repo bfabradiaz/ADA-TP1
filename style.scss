@@ -1,4 +1,6 @@
-@import "aboutUs"
+@import "aboutUs";
+@import "services";
+@import "whyChooseUs";
 
 $letra-nav:#004289;
 $fondo-header:#1445B3;
@@ -6,7 +8,7 @@ $font-family-parrafo: 'Open Sans', sans-serif;
 $font-family-titulos: 'Montserrat', sans-serif;
 
 @mixin flex {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -41,7 +43,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     @include flex; 
     justify-content: space-between; 
     height: 80px;
-    margin: 10px; 
+    
 }
       
 .logo-ada{
@@ -73,21 +75,32 @@ ul li a{
 
 .header{
     @include flex;
+    width: 1349px;
     height: 634px;
     background-color: $fondo-header;
-}
+    padding: 20px 0px 20px 0; 
+} 
 
 .texto-header{
     width: 555px;
-    height: 256px;
+    height: 171px;
     color:#fff;
     font-family: $font-family-titulos;
-    font-size: 35px;  
+    font-size: 48px; 
+    font-weight: 700;
+    line-height: 57.6px;  
+    margin:0 0 40px 0; 
+}
+
+.underline{
+    color:#74b5fc;
+    text-decoration: underline;
+    text-align: left;
 }
 
 .img-header{
     width: 555px;
-    height: 315px;
+    height: 314px;
 }
 
 img{
@@ -255,7 +268,7 @@ img{
             margin: 0 7px 0 7px;
         };
     };
-};
+
 
 .fotoRedonda{
     width: 255px;
