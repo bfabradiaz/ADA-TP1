@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import "_aboutUs";
 @import "_services";
 @import "_whyChooseUs";
@@ -7,6 +8,11 @@
 @import "_ourClients";
 @import "_contactUs";
 
+=======
+@import "aboutUs";
+@import "services";
+@import "whyChooseUs";
+>>>>>>> affe96935e20b3bb4fc345bf52522a7b214aab26
 
 $letra-nav:#004289;
 $fondo-header:#1445B3;
@@ -65,8 +71,11 @@ $font-family-titulos: 'Montserrat', sans-serif;
     align-content: center;
     height: 80px;
     
+<<<<<<< HEAD
     margin: 0 auto;
     
+=======
+>>>>>>> affe96935e20b3bb4fc345bf52522a7b214aab26
 }
       
 .logo-ada{
@@ -98,11 +107,18 @@ ul li a{
 
 .header{
     @include flex;
+<<<<<<< HEAD
     width: 100%;
     height: 634px;
     background-color: $fondo-header;
     padding: 20px 0px 20px 0; 
     margin: 0 auto;
+=======
+    width: 1349px;
+    height: 634px;
+    background-color: $fondo-header;
+    padding: 20px 0px 20px 0; 
+>>>>>>> affe96935e20b3bb4fc345bf52522a7b214aab26
 } 
 
 .texto-header{
@@ -153,6 +169,149 @@ img{
     font-size: 15px;
 };
 
+<<<<<<< HEAD
+=======
+.portfolio-1{
+    height: 1115px;
+    background-color: #FFFFFF;
+    padding: 60px 0 60px 0;
+    .titulos{
+        margin-top: 20px;
+    } 
+    .button-Small{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        .button-Small-Details{
+            font-family: $font-family-parrafo;
+            line-height: 20px;
+            font-size: 12px;
+            margin: 15px 15px 15px 0;
+            text-align: center;
+            color: #007BFF;
+            background: #ecf5ff;
+            width: 60px;
+            height: 32px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+    }   
+}  
+
+.portfolio-Info-Imagen{
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+}
+
+.portfolio-Info{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+    #portfolio-Info-1{
+        background-image: url("img/portfolio/app1.jpg");
+    };
+    #portfolio-Info-2{
+        background-image: url("img/portfolio/web3.jpg");
+    };
+    #portfolio-Info-3{
+        background-image: url("img/portfolio/app2.jpg");
+    };
+    #portfolio-Info-4{
+        background-image: url("img/portfolio/card2.jpg");
+    };
+    #portfolio-Info-5{
+        background-image: url("img/portfolio/web2.jpg");
+    };
+    #portfolio-Info-6{
+        background-image: url("img/portfolio/app3.jpg");
+    };
+    #portfolio-Info-7{
+        background-image: url("img/portfolio/card1.jpg");
+    };
+    #portfolio-Info-8{
+        background-image: url("img/portfolio/card3.jpg");
+    };
+    #portfolio-Info-9{
+        background-image: url("img/portfolio/web1.jpg");
+    };
+};
+
+.testimonials{
+    height: 389px;
+    background-color: #ECF5FF;
+    padding: 60px 0 60px 0;
+    } 
+    .testimonials-Columns{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        .foto-Redonda{
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 25px;
+            .img-Redonda{
+                width: 120px;
+                height: 120px;
+                border-radius: 60px;
+                background-image: url("img/testimonial-1.jpg");
+                background-size: cover;
+                background-position: center;
+                border: 4px solid #fff;
+            };
+        };
+        .testimonials-Texts{
+            width: 65%;
+            .testimonial-Title{
+                font-family: $font-family-titulos;
+                font-size: 20px;
+                font-weight: 700px;
+                color: #111111;
+            }
+            .testimonial-Subtitle{
+                font-family: $font-family-titulos;
+                font-size: 14px;
+                font-weight: 400;
+                color: #999999;
+                margin-top: 5px;
+            }
+            .testimonial-Paragraph{
+                width: 584px;
+                font-family: $font-family-parrafo;
+                font-size: 16px;
+                font-style: italic;
+                color: #444444;
+                line-height: 24px;
+                margin-top: 15px;
+                font-weight: 400;
+            };
+        };
+    };
+    .changeTestimonials{
+        @include flex();
+        margin: 30px 0 50px 0;
+        .butonChange{
+            width: 12px;
+            height: 12px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 6px;
+            margin: 0 7px 0 7px;
+        };
+    };
+
+>>>>>>> affe96935e20b3bb4fc345bf52522a7b214aab26
 
 
 
