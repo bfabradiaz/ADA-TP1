@@ -1,0 +1,204 @@
+$letra-nav:#004289;
+$fondo-header:#1445B3;
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin aboutUs-secciones{
+    @include flex;
+    height: 104px;
+    padding: 45px 0 30px 0;
+}
+
+@mixin aboutUs-logos{
+    @include flex;
+    line-height: 1.5;
+    width: 93px;
+    height: 64px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    color:#007bff;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.aboutUs{
+    @include flex;
+    flex-direction: column;
+    height: 1617px; 
+}
+
+// Comienzo de About us primer contenedor
+.aboutUs-contenedor1{
+    @include flex;
+    flex-direction: column; 
+    width: 1140px;
+    height: 160px;
+    
+   
+}    
+
+.aboutUs-titulo{
+    text-align: center;
+    font-size: 36px; 
+    font-weight: 500;
+    height: 43px;
+    font-family: $font-family-titulos;
+    color:#283d50;
+    padding: 0 0 60px 0; 
+}
+
+.aboutUs-descripcion{
+    width: 555px;
+    height: 104px;
+    text-align: center;
+    font-family: $font-family-parrafo;
+    color:#556877;
+    font-size: 15px;
+}
+    
+.aboutUs-cajas{
+    height: 448px;
+    max-width: 85%;
+    @include flex;
+    margin-bottom:10%;
+}
+
+.aboutUs-cajas-caja1{
+    height: 408px;
+    padding: 0 15px 0 15px;
+    flex:1;
+    font-family: $font-family-parrafo;
+    font-size: 16px;
+    line-height: 26px;
+    color:#444444;
+    
+}
+
+.aboutUs-seccion{
+    @include aboutUs-secciones;
+}
+
+
+.seccion-logo{
+    @include aboutUs-logos;
+}
+
+.seccion-texto{
+    height: 80px;
+}
+
+.seccion-texto-titulos{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-family-titulos;
+    line-height: 21.6px;
+}
+
+.seccion-texto-descripcion{
+    font-size: 14px;
+    font-family: $font-family-parrafo;
+    line-height: 24px;
+}
+
+
+.aboutUs-cajas-caja2{
+    @include flex;
+    height: 408px;
+    flex:1;
+}
+
+.cajas-caja2-imagen{
+    width: 100%;
+    height: auto;
+}
+
+// Comienzo de About us segundo contenedor
+.aboutUs-contenedor2{
+    @include flex;
+    width: 1110px;
+    height: 167px;
+    margin-bottom: 18%;
+   
+}    
+
+.aboutUs-contenedor2-caja1{
+    height: 294px;
+    flex:1;
+}
+
+.contenedor2-caja1-imagen{
+    width: 100%;
+    height: auto;
+}
+
+.aboutUs-contenedor2-caja2{
+    height: 328px;
+    flex:1;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-family-titulos;
+    line-height: 21.8px;
+    color:#283d50;
+    margin:20px 0 20px 20px; 
+}
+
+.descripcion{
+    font-family: $font-family-parrafo;
+    font-size: 16px;
+    line-height: 24px;
+    color:#444444;
+    margin:20px 0 0 20px; 
+}
+
+// Comienzo de About us tercer contenedor
+.aboutUs-contenedor3{
+    @include flex;
+    width: 1110px;
+    height: 167px;
+    margin-bottom: 15%;
+}    
+
+.aboutUs-contenedor3-caja1{
+    height: 328px;
+    flex:1;
+}
+
+.titulo{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $font-family-titulos;
+    line-height: 21.8px;
+    color:#283d50;
+    margin:20px 0 20px 20px; 
+}
+
+.descripcion{
+    font-family: $font-family-parrafo;
+    font-size: 16px;
+    line-height: 24px;
+    color:#444444;
+    margin:20px 0 0 20px; 
+}
+
+.aboutUs-contenedor3-caja2{
+    height: 328px;
+    flex:1;
+}
+
+.contenedor3-caja2-imagen{
+    width: 100%;
+    height: auto;
+}
+

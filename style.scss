@@ -1,10 +1,20 @@
+@import "_aboutUs";
+@import "_services";
+@import "_whyChooseUs";
+@import "_ourPortfolio";
+@import "_testimonials";
+@import "_team";
+@import "_ourClients";
+@import "_contactUs";
+
+
 $letra-nav:#004289;
 $fondo-header:#1445B3;
 $font-family-parrafo: 'Open Sans', sans-serif;
 $font-family-titulos: 'Montserrat', sans-serif;
 
 @mixin flex {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
 }
@@ -35,11 +45,28 @@ $font-family-titulos: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
+.container-All{
+
+}
+
+.viewport{
+    width:100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+
 .container-nav{
+    width: 75%;
     @include flex; 
     justify-content: space-between; 
+    align-content: center;
     height: 80px;
-    margin: 10px; 
+    
+    margin: 0 auto;
+    
 }
       
 .logo-ada{
@@ -71,21 +98,33 @@ ul li a{
 
 .header{
     @include flex;
+    width: 100%;
     height: 634px;
     background-color: $fondo-header;
-}
+    padding: 20px 0px 20px 0; 
+    margin: 0 auto;
+} 
 
 .texto-header{
     width: 555px;
-    height: 256px;
+    height: 171px;
     color:#fff;
     font-family: $font-family-titulos;
-    font-size: 35px;  
+    font-size: 48px; 
+    font-weight: 700;
+    line-height: 57.6px;  
+    margin:0 0 40px 0; 
+}
+
+.underline{
+    color:#74b5fc;
+    text-decoration: underline;
+    text-align: left;
 }
 
 .img-header{
     width: 555px;
-    height: 315px;
+    height: 314px;
 }
 
 img{
@@ -114,226 +153,6 @@ img{
     font-size: 15px;
 };
 
-.portfolio-1{
-    height: 1115px;
-    background-color: #FFFFFF;
-    padding: 60px 0 60px 0;
-    .titulos{
-        margin-top: 20px;
-    } 
-    .button-Small{
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 15px;
-        .button-Small-Details{
-            font-family: $font-family-parrafo;
-            line-height: 20px;
-            font-size: 12px;
-            margin: 15px 15px 15px 0;
-            text-align: center;
-            color: #007BFF;
-            background: #ecf5ff;
-            width: 60px;
-            height: 32px;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-            border: none;
-        }
-    }   
-}  
 
-.portfolio-Info-Imagen{
-    width: 30%;
-    height: 250px;
-    border-radius: 6px;
-    background-size: cover;
-    background-position: center;
-    margin: 15px 15px 15px 15px;
-}
 
-.portfolio-Info{
-    width: 80%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 10% 0 10%;
-    #portfolio-Info-1{
-        background-image: url("img/portfolio/app1.jpg");
-    };
-    #portfolio-Info-2{
-        background-image: url("img/portfolio/web3.jpg");
-    };
-    #portfolio-Info-3{
-        background-image: url("img/portfolio/app2.jpg");
-    };
-    #portfolio-Info-4{
-        background-image: url("img/portfolio/card2.jpg");
-    };
-    #portfolio-Info-5{
-        background-image: url("img/portfolio/web2.jpg");
-    };
-    #portfolio-Info-6{
-        background-image: url("img/portfolio/app3.jpg");
-    };
-    #portfolio-Info-7{
-        background-image: url("img/portfolio/card1.jpg");
-    };
-    #portfolio-Info-8{
-        background-image: url("img/portfolio/card3.jpg");
-    };
-    #portfolio-Info-9{
-        background-image: url("img/portfolio/web1.jpg");
-    };
-};
 
-.testimonials{
-    height: 389px;
-    background-color: #ECF5FF;
-    padding: 60px 0 60px 0;
-    } 
-    .testimonials-Columns{
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-        .foto-Redonda{
-            width: 25%;
-            display: flex;
-            justify-content: flex-end;
-            margin-right: 25px;
-            .img-Redonda{
-                width: 120px;
-                height: 120px;
-                border-radius: 60px;
-                background-image: url("img/testimonial-1.jpg");
-                background-size: cover;
-                background-position: center;
-                border: 4px solid #fff;
-            };
-        };
-        .testimonials-Texts{
-            width: 65%;
-            .testimonial-Title{
-                font-family: $font-family-titulos;
-                font-size: 20px;
-                font-weight: 700px;
-                color: #111111;
-            }
-            .testimonial-Subtitle{
-                font-family: $font-family-titulos;
-                font-size: 14px;
-                font-weight: 400;
-                color: #999999;
-                margin-top: 5px;
-            }
-            .testimonial-Paragraph{
-                width: 584px;
-                font-family: $font-family-parrafo;
-                font-size: 16px;
-                font-style: italic;
-                color: #444444;
-                line-height: 24px;
-                margin-top: 15px;
-                font-weight: 400;
-            };
-        };
-    };
-    .changeTestimonials{
-        @include flex();
-        margin: 30px 0 50px 0;
-        .butonChange{
-            width: 12px;
-            height: 12px;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 6px;
-            margin: 0 7px 0 7px;
-        };
-    };
-};
-
-.fotoRedonda{
-    width: 255px;
-    height: 255px;
-    border-radius: 127.5px;
-    background-size: cover;
-    background-position: center;
-    margin: 20px 15px;
-}
-
-.team{
-    background-color: #FFFFFF;
-    margin: 50px 0;
-    .titulos{
-    margin-top: 30px;
-    };
-    .fotos-Circulares{
-        @include flex();
-        #foto-Redonda-1{
-            background-image: url("img/team-01.jpg");            
-        };
-        #foto-Redonda-2{
-            background-image: url("img/team-02.jpg");            
-        };
-        #foto-Redonda-3{
-            background-image: url("img/team-03.jpg");            
-        };
-        #foto-Redonda-4{
-            background-image: url("img/team-04.jpg");            
-        };
-    };
-};
-
-.fotos-Rectangulares{
-    width: 277.25px;
-    height: 160px;
-    background-position: center;
-    padding: 64px;
-    background-repeat: no-repeat;
-    background-size: 55%;
-    background-color: #FFFFFF;
-    border-right: 1px solid #D6EAFF;
-    border-bottom: 1px solid #D6EAFF;
-};
-
-.foto-Rectangular-All{
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 30px 0;
-    #foto-Rectangular-1{
-        background-image: url("img/clients/client-1.png")    
-    };
-    #foto-Rectangular-2{
-        background-image: url("img/clients/client-2.png")    
-    };
-    #foto-Rectangular-3{
-        background-image: url("img/clients/client-3.png")    
-    };
-    #foto-Rectangular-4{
-        background-image: url("img/clients/client-4.png")    
-    };
-    #foto-Rectangular-5{
-        background-image: url("img/clients/client-5.png")    
-    };
-    #foto-Rectangular-6{
-        background-image: url("img/clients/client-6.png")    
-    };
-    #foto-Rectangular-7{
-        background-image: url("img/clients/client-7.png")    
-    };
-    #foto-Rectangular-8{
-        background-image: url("img/clients/client-8.png")    
-    };
-};
-    
-
-.ourClients{
-    background-color: #ECF5FF;
-    padding: 60px 0;
-};  

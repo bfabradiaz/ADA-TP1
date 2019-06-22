@@ -1,0 +1,41 @@
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoRedonda{
+    width: 255px;
+    height: 255px;
+    border-radius: 127.5px;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+
+.team{
+    background-color: #FFFFFF;
+    margin: 50px 0;
+    .titulos{
+    margin-top: 30px;
+    };
+    .fotos-Circulares{
+        @include flex();
+        #foto-Redonda-1{
+            background-image: url("img/team-01.jpg");            
+        };
+        #foto-Redonda-2{
+            background-image: url("img/team-02.jpg");            
+        };
+        #foto-Redonda-3{
+            background-image: url("img/team-03.jpg");            
+        };
+        #foto-Redonda-4{
+            background-image: url("img/team-04.jpg");            
+        };
+    };
+};
+

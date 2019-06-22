@@ -1,0 +1,105 @@
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whyChooseUs{
+    @include flex;
+    flex-direction: column;
+    height: 759px;
+    background-color: #004a99;
+}
+
+.whyChooseUs-contenedor1{
+    @include flex;
+    flex-direction: column;
+    max-width: 80%;
+    height: 160px;
+}
+
+.whyChooseUs-titulo{
+    text-align: center;
+    font-size: 36px; 
+    font-weight: 500;
+    height: 43px;
+    font-family: $font-family-titulos;
+    color:#fff;
+    padding: 30px 0 30px 0; 
+}
+
+.whyChooseUs-descripcion{
+    width: 555px;
+    text-align: center;
+    font-family: $font-family-parrafo;
+    color:#fff;
+    font-size: 15px;
+    padding: 30px 0 60px 0; 
+}
+
+// cards
+.whyChooseUs-contenedor-cards{
+    @include flex; 
+    max-width: 80%;
+    height: 380px;
+}
+
+.whyChooseUs-card{
+    @include flex;
+    flex-direction: column;
+    width: 320px;
+    height: 295px;
+    margin: 30px 30px 30px 30px;
+    border-radius: 10px;
+    background-color: #00458f;
+}
+
+.whyChooseUs-card-logo{ 
+    @include flex;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 20px;
+    color:#bfddfe;
+}
+
+.whyChooseUs-card-texto{
+    text-align: center;
+
+}
+
+.whyChooseUs-card-texto-titulos{
+    @include flex;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: $font-family-titulos;
+    line-height: 21.6px;
+    color:#fff;
+}
+
+.whyChooseUs-card-texto-descripcion{
+    @include flex;
+    font-size: 14px;
+    font-family: $font-family-parrafo;
+    line-height: 24px;
+    color: #d8eafe;
+    padding: 0 20px 0 20px;
+}
+
+.whyChooseUs-link{
+    @include flex;
+    text-decoration: none;
+    color:#fff;
+    font-family: $font-family-titulos;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+// contador
+
+.whyChooseUs-contador{
+    height: 113px;
+    
+}

@@ -1,0 +1,30 @@
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-1{
+    background-color: #00428a;
+    height: 100px;
+    @include flex();
+    flex-direction: column;
+    p{
+        color: #ffffff;
+        width: 50%;
+        font-family: $font-family-parrafo;
+        text-align: center;
+    };
+}; 
+
+.linea-1{
+    font-size: 14px;
+};
+
+.linea-2{
+    font-size: 13px;
+};
+

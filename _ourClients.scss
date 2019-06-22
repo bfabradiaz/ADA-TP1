@@ -1,0 +1,52 @@
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+.ourClients{
+    background-color: #ECF5FF;
+    padding: 60px 0;
+};
+
+.fotos-Rectangulares{
+    width: 277.25px;
+    height: 160px;
+    background-position: center;
+    padding: 64px;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    background-color: #FFFFFF;
+    border-right: 1px solid #D6EAFF;
+    border-bottom: 1px solid #D6EAFF;
+};
+
+.foto-Rectangular-All{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px 0;
+    #foto-Rectangular-1{
+        background-image: url("img/clients/client-1.png")    
+    };
+    #foto-Rectangular-2{
+        background-image: url("img/clients/client-2.png")    
+    };
+    #foto-Rectangular-3{
+        background-image: url("img/clients/client-3.png")    
+    };
+    #foto-Rectangular-4{
+        background-image: url("img/clients/client-4.png")    
+    };
+    #foto-Rectangular-5{
+        background-image: url("img/clients/client-5.png")    
+    };
+    #foto-Rectangular-6{
+        background-image: url("img/clients/client-6.png")    
+    };
+    #foto-Rectangular-7{
+        background-image: url("img/clients/client-7.png")    
+    };
+    #foto-Rectangular-8{
+        background-image: url("img/clients/client-8.png")    
+    };
+};

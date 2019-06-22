@@ -1,0 +1,82 @@
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-1{
+    height: 1115px;
+    background-color: #FFFFFF;
+    padding: 60px 0 60px 0;
+    .titulos{
+        margin-top: 20px;
+    } 
+    .button-Small{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        .button-Small-Details{
+            font-family: $font-family-parrafo;
+            line-height: 20px;
+            font-size: 12px;
+            margin: 15px 15px 15px 0;
+            text-align: center;
+            color: #007BFF;
+            background: #ecf5ff;
+            width: 60px;
+            height: 32px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border: none;
+        }
+    }   
+}  
+
+.portfolio-Info-Imagen{
+    width: 30%;
+    height: 250px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 15px 15px 15px;
+}
+
+.portfolio-Info{
+    width: 80%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 10% 0 10%;
+    #portfolio-Info-1{
+        background-image: url("img/portfolio/app1.jpg");
+    };
+    #portfolio-Info-2{
+        background-image: url("img/portfolio/web3.jpg");
+    };
+    #portfolio-Info-3{
+        background-image: url("img/portfolio/app2.jpg");
+    };
+    #portfolio-Info-4{
+        background-image: url("img/portfolio/card2.jpg");
+    };
+    #portfolio-Info-5{
+        background-image: url("img/portfolio/web2.jpg");
+    };
+    #portfolio-Info-6{
+        background-image: url("img/portfolio/app3.jpg");
+    };
+    #portfolio-Info-7{
+        background-image: url("img/portfolio/card1.jpg");
+    };
+    #portfolio-Info-8{
+        background-image: url("img/portfolio/card3.jpg");
+    };
+    #portfolio-Info-9{
+        background-image: url("img/portfolio/web1.jpg");
+    };
+};
