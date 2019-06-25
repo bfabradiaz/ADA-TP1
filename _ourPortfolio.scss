@@ -32,6 +32,9 @@ $font-family-titulos: 'Montserrat', sans-serif;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
             border: none;
+            :nth-last-of-type(1){
+                margin: 15px 0 15px 0;
+            }
         }
     }   
 }  

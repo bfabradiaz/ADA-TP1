@@ -28,3 +28,106 @@ $font-family-titulos: 'Montserrat', sans-serif;
     font-size: 13px;
 };
 
+.contactUs{
+    margin-top: 50px;
+    height: 592px;
+    background-color: #ffffff;
+    .contenedorContactUs{
+        display: flex;
+        margin: 30px auto;
+        width: 100%;
+        .mapa{
+            width: 50%;
+            height: 379px;
+            padding: 0 15px;
+            .mapa-1{
+                width: 100%;
+                height: 312px;
+            }
+        }
+    }
+}
+
+.formularioContactUs{
+    width: 50%;
+    padding: 0 15px;
+    .direcciones{
+        display: flex;
+        margin-bottom: 75px;
+        color: #283D50;
+        font-family: $font-family-parrafo;
+        font-size: 14px;
+        font-weight: 400;
+        word-spacing: 0;
+        ul{
+            display: flex;
+            justify-content: space-between; 
+            width: 100%;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li i{
+            color: #1b6abe;
+            font-size: 20px;
+            margin-right: 15px;
+        }
+    }
+}
+
+.form-style{
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: $font-family-parrafo;
+    font-weight: 400;
+    color: #495057;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    //transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.firstData{
+    display: flex;
+    :first-child{
+        margin-right: 10px;
+    }
+}
+
+
+.fs50{
+    width: 50%;
+    height: 38px;
+}
+
+.fs100{
+    width: 100%;
+    height: 38px;
+}
+
+.fs100Alto{
+    width: 100%;
+    height: 119px;
+}
+
+.botonSendMessage{
+    @include flex();
+    .botonS{
+    width: 172px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-family: $font-family-parrafo;
+    font-size: 16px; 
+    }
+}
+
+.footer{
+    height: 362px;
+    background-color: #004A99;
+    margin: auto;
+    @include flex();
+    
+}

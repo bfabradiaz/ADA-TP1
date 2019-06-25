@@ -363,6 +363,8 @@
       cursor: pointer;
       transition: all 0.3s ease-in-out;
       border: none; }
+      .portfolio-1 .button-Small .button-Small-Details :nth-last-of-type(1) {
+        margin: 15px 0 15px 0; }
 
 .portfolio-Info-Imagen {
   width: 30%;
@@ -541,6 +543,93 @@
 
 .linea-2 {
   font-size: 13px; }
+
+.contactUs {
+  margin-top: 50px;
+  height: 592px;
+  background-color: #ffffff; }
+  .contactUs .contenedorContactUs {
+    display: flex;
+    margin: 30px auto;
+    width: 100%; }
+    .contactUs .contenedorContactUs .mapa {
+      width: 50%;
+      height: 379px;
+      padding: 0 15px; }
+      .contactUs .contenedorContactUs .mapa .mapa-1 {
+        width: 100%;
+        height: 312px; }
+
+.formularioContactUs {
+  width: 50%;
+  padding: 0 15px; }
+  .formularioContactUs .direcciones {
+    display: flex;
+    margin-bottom: 75px;
+    color: #283D50;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: 0; }
+    .formularioContactUs .direcciones ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%; }
+    .formularioContactUs .direcciones ul li {
+      list-style: none; }
+    .formularioContactUs .direcciones ul li i {
+      color: #1b6abe;
+      font-size: 20px;
+      margin-right: 15px; }
+
+.form-style {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #495057;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border: 1px solid #ced4da; }
+
+.firstData {
+  display: flex; }
+  .firstData :first-child {
+    margin-right: 10px; }
+
+.fs50 {
+  width: 50%;
+  height: 38px; }
+
+.fs100 {
+  width: 100%;
+  height: 38px; }
+
+.fs100Alto {
+  width: 100%;
+  height: 119px; }
+
+.botonSendMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .botonSendMessage .botonS {
+    width: 172px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; }
+
+.footer {
+  height: 362px;
+  background-color: #004A99;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 * {
   margin: 0;
