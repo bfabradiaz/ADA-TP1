@@ -1,6 +1,8 @@
 $font-family-parrafo: 'Open Sans', sans-serif;
 $font-family-titulos: 'Montserrat', sans-serif;
 
+
+
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -14,6 +16,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     background-size: cover;
     background-position: center;
     margin: 20px 15px;
+    //
 }
 
 .team{
