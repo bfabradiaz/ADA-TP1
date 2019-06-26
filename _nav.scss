@@ -1,0 +1,53 @@
+$letra-nav:#004289;
+$fondo-header:#1445B3;
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+
+@mixin flex {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.viewport{
+    width:100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+
+.container-nav{
+    width: 75%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    height: 80px;
+    margin: 0 auto;   
+}
+      
+.logo-ada{
+    width: 67px;
+    height: 40px;
+}    
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.menu{
+    width: 500px;
+}
+
+.menu ul{
+    @include flex;
+    list-style: none;   
+}
+
+ul li a{
+    color: $letra-nav;  
+    text-decoration: none; 
+    font-family: $font-family-titulos;
+}

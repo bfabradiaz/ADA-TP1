@@ -1,3 +1,41 @@
+.viewport {
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 2; }
+
+.container-nav {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: 0 auto; }
+
+.logo-ada {
+  width: 67px;
+  height: 40px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.menu {
+  width: 500px; }
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none; }
+
+ul li a {
+  color: #004289;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif; }
+
 .aboutUs {
   display: flex;
   justify-content: center;
@@ -690,44 +728,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-.viewport {
-  width: 100%;
-  margin: 0 auto;
-  position: sticky;
-  top: 0;
-  background-color: #ffffff;
-  z-index: 2; }
-
-.container-nav {
-  width: 75%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  margin: 0 auto; }
-
-.logo-ada {
-  width: 67px;
-  height: 40px; }
-
-img {
-  width: 100%;
-  height: auto; }
-
-.menu {
-  width: 500px; }
-
-.menu ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none; }
-
-ul li a {
-  color: #004289;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif; }
 
 .header {
   display: flex;

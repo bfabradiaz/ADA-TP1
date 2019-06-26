@@ -1,3 +1,4 @@
+@import "_nav";
 @import "_aboutUs";
 @import "_services";
 @import "_whyChooseUs";
@@ -5,7 +6,7 @@
 @import "_testimonials";
 @import "_team";
 @import "_ourClients";
-@import "_contactUs";
+@import "_contactUs"; 
 
 
 $letra-nav:#004289;
@@ -45,53 +46,9 @@ $font-family-titulos: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-.container-All{
+// .container-All{
 
-}
-
-.viewport{
-    width:100%;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
-    background-color: #ffffff;
-    z-index: 2;
-}
-
-
-.container-nav{
-    width: 75%;
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    height: 80px;
-    margin: 0 auto;   
-}
-      
-.logo-ada{
-    width: 67px;
-    height: 40px;
-}    
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-.menu{
-    width: 500px;
-}
-
-.menu ul{
-    @include flex;
-    list-style: none;   
-}
-
-ul li a{
-    color: $letra-nav;  
-    text-decoration: none; 
-    font-family: $font-family-titulos;
-}
+// }
 
 .header{
     @include flex;
