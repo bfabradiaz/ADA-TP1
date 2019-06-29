@@ -125,23 +125,31 @@ $font-family-titulos: 'Montserrat', sans-serif;
 }
 
 .footer{
-    height: 362px;
     background-color: #004A99;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 60px 0 30px 0;
+    height: 362px;
+    width: 100%;
+    .footer-content{
+        background-color: #004A99;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
+        padding: 60px 0 30px 0;
+    }
 }
 
 
 .wayne{
     width: 33,33%;
+    padding: 0 15px 30px 15px;
     h3{
         font-size: 34px;
         color: #FFFFFF;
         font-family: $font-family-titulos;
         font-weight: 400;
+        letter-spacing: 3px;
+        padding-bottom: 20px;
     }
     p{
         font-size: 13px;
@@ -154,10 +162,11 @@ $font-family-titulos: 'Montserrat', sans-serif;
 
 .usefullLinks{
     width: 16,66%;
+    padding-right: 50px;
+    padding-left: 15px;
 }
 
 .subtitleFooter{
-    width: 160px;
     font-size: 14px;
     font-family: $font-family-titulos;
     font-weight: 700;
@@ -166,9 +175,8 @@ $font-family-titulos: 'Montserrat', sans-serif;
 }
 
 .listadoPaginado{
-    width: 160px;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 14px;
     font-family: $font-family-parrafo;
     color: #FFFFFF;
     list-style: none;
@@ -178,23 +186,23 @@ $font-family-titulos: 'Montserrat', sans-serif;
 }
 
 .listadoDirecciones{
-    width: 160px;
     font-size: 14px;
-    line-height: 21px;
     font-family: $font-family-parrafo;
     color: #FFFFFF;
     list-style: none;
+    margin-bottom: 30px;   
     li{
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 }
 
 .listadoNews{
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
-    font-family: $font-family-titulos;
+    font-family: $font-family-parrafo;
     color: #FFFFFF;
-    width: 350px;
+    width: 300px;
+    margin-bottom: 30px;
 }
 
 .relleno{
@@ -203,7 +211,10 @@ $font-family-titulos: 'Montserrat', sans-serif;
     height: 33px;
 }
 
-.contact .ourNewsletter{
+.contact, .ourNewsletter{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
     width: 25%;
 }
 
@@ -216,10 +227,24 @@ $font-family-titulos: 'Montserrat', sans-serif;
         height: 36px;
         background-color: #FFFFFF;
         border-radius: 50%;
+        border: 0 solid #007BFF;
         margin-right: 10px;
+        box-sizing: content-box;
     }
     .iconify{
         width: 36px;
         height: 36px;
     } 
+}
+.form-news{
+    display: flex;
+    .boton-news{
+        width: 94px;
+        height: 33px;
+        background-color: #007BFF;
+        border: none;
+        color: #ffffff;
+        font-family: $font-family-titulos;
+        font-size: 15px;
+    }
 }
