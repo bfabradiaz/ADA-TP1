@@ -1,0 +1,126 @@
+$letra-nav:#004289;
+$fondo-header:#1445B3;
+$font-family-parrafo: 'Open Sans', sans-serif;
+$font-family-titulos: 'Montserrat', sans-serif;
+// 
+
+@mixin flex {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boton {
+    width: 172px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: #fff;
+    font-family: $font-family-titulos;
+    font-size: 15px; 
+    font-weight: 600;
+}
+ *{
+     margin: 0;
+     padding: 0;
+ }
+
+ .header{
+    @include flex;
+    width: 100%;
+    height: calc(634px - 80px);
+    background-color: $fondo-header;
+    padding: 20px 0px 20px 0; 
+    margin: 0 auto;  
+ }    
+
+ .contenedor-header{
+    @include flex;
+    width: 80%;
+
+ }
+
+ .texto-header{
+    width: 50%;
+    flex:1;
+    height: 171px;
+    color:#fff;
+    font-family: $font-family-titulos;
+    font-size: 48px; 
+    font-weight: 700;
+    line-height: 57.6px;  
+    margin:0 0 40px 0; 
+    h3{
+    width: 555px;
+        span{
+        color: #74b5fc;
+        text-decoration: underline;
+        }
+    }
+}
+
+span{
+    color: #74b5fc;
+    text-decoration: underline; 
+} 
+
+
+.img-header{
+    width: 50%;
+    height: 314px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.boton-get{
+    @include boton;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    transition: all ease 0.5s;
+}
+
+.boton-our{
+    @include boton;
+    transition: all ease 0.5s;
+    
+}
+
+.titulos {
+    font-family: $font-family-titulos;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+    color: #283D50;
+};
+
+.subtitles-Team{
+    width: 584px;
+    margin: 30px auto;
+    text-align: center;
+    color: #444444;
+    font-family: $font-family-parrafo;
+    font-size: 15px;
+};
+
+// hovers
+
+.boton-get:hover{
+    @include boton;
+}
+
+.boton-our:hover{
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
+// media queries
+
+@media (max-width:768px){
+    .contenedor-header{
+        @include flex;
+        flex-direction: column-reverse;
+

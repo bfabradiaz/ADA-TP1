@@ -7,7 +7,7 @@
   z-index: 2; }
 
 .container-nav {
-  width: 75%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,7 +23,7 @@ img {
   height: auto; }
 
 .menu {
-  width: 500px; }
+  width: 60%; }
 
 .menu ul {
   display: flex;
@@ -31,10 +31,139 @@ img {
   align-items: center;
   list-style: none; }
 
-ul li a {
+.menu a {
   color: #004289;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 25px; }
+
+.container-nav i {
+  color: #004289;
+  font-size: 20px;
+  display: none; }
+
+@media (max-width: 768px) {
+  .menu {
+    display: none; }
+  .container-nav i {
+    display: block; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(634px - 80px);
+  background-color: #1445B3;
+  padding: 20px 0px 20px 0;
+  margin: 0 auto; }
+
+.contenedor-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; }
+
+.texto-header {
+  width: 50%;
+  flex: 1;
+  height: 171px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  margin: 0 0 40px 0; }
+  .texto-header h3 {
+    width: 555px; }
+    .texto-header h3 span {
+      color: #74b5fc;
+      text-decoration: underline; }
+
+span {
+  color: #74b5fc;
+  text-decoration: underline; }
+
+.img-header {
+  flex: 1; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.boton-get {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  transition: all ease 0.5s; }
+
+.boton-our {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all ease 0.5s; }
+
+.titulos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  color: #283D50; }
+
+.subtitles-Team {
+  width: 584px;
+  margin: 30px auto;
+  text-align: center;
+  color: #444444;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; }
+
+.boton-get:hover {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600; }
+
+.boton-our:hover {
+  background-color: #007bff;
+  border: 2px solid #007bff; }
+
+@media (max-width: 768px) {
+  .contenedor-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse; }
+  .texto-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; } }
 
 .aboutUs {
   display: flex;
@@ -90,7 +219,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   height: 104px;
-  padding: 45px 0 30px 0; }
+  padding: 0 0 30px 0; }
 
 .seccion-logo {
   display: flex;
@@ -106,7 +235,8 @@ ul li a {
   color: #007bff;
   border: 2px solid #007bff;
   border-radius: 50%;
-  margin-right: 20px; }
+  margin: 0 20px 20px 20px;
+  transition: all ease 0.3s; }
 
 .seccion-texto {
   height: 80px; }
@@ -203,6 +333,11 @@ ul li a {
   width: 100%;
   height: auto; }
 
+.seccion-logo:hover {
+  background-color: #007bff;
+  color: #fff;
+  border: 2px solid #fff; }
+
 .services {
   display: flex;
   justify-content: center;
@@ -241,7 +376,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 80%;
+  width: 1140px;
   height: 624px; }
 
 .card {
@@ -252,10 +387,11 @@ ul li a {
   align-items: center;
   width: 425px;
   height: 168px;
-  margin: 0 40px 40px 10px;
+  margin: 0 10px 40px 10px;
   padding: 30px 30px 30px 30px;
   border-radius: 10px;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: all ease 1s; }
 
 .card-logo {
   position: absolute;
@@ -273,13 +409,20 @@ ul li a {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   line-height: 21.6px;
-  margin-left: 40px; }
+  margin-left: 40px;
+  transition: all ease 1s; }
 
 .card-texto-descripcion {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   margin-left: 40px; }
+
+.card:hover {
+  transform: translateY(-10px); }
+
+.card-texto-titulos:hover {
+  color: #007bff; }
 
 .whyChooseUs {
   display: flex;
@@ -723,71 +866,3 @@ ul li a {
   color: #FFFFFF;
   width: 165px;
   height: 33px; }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: calc(634px - 80px);
-  background-color: #1445B3;
-  padding: 20px 0px 20px 0;
-  margin: 0 auto; }
-
-.texto-header {
-  width: 555px;
-  height: 171px;
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  margin: 0 0 40px 0; }
-  .texto-header h3 {
-    width: 555px; }
-    .texto-header h3 span {
-      color: #74b5fc;
-      text-decoration: underline; }
-
-.underline {
-  color: #74b5fc;
-  text-decoration: underline;
-  text-align: left; }
-
-.img-header {
-  width: 555px;
-  height: 314px; }
-
-img {
-  width: 100%;
-  height: auto; }
-
-.boton {
-  width: 172px;
-  height: 45px;
-  border: 2px solid #fff;
-  border-radius: 30px;
-  background-color: rgba(255, 255, 255, 0.089);
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
-
-.titulos {
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  font-weight: 500;
-  text-align: center;
-  color: #283D50; }
-
-.subtitles-Team {
-  width: 584px;
-  margin: 30px auto;
-  text-align: center;
-  color: #444444;
-  font-family: "Open Sans", sans-serif;
-  font-size: 15px; }
