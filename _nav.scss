@@ -37,10 +37,6 @@ img{
     height: auto;
 }
 
-.menu{
-    width: 500px;
-}
-
 .menu ul{
     @include flex;
     list-style: none;   
@@ -50,4 +46,10 @@ ul li a{
     color: $letra-nav;  
     text-decoration: none; 
     font-family: $font-family-titulos;
+}
+
+.menu a{
+    font-weight: 500;
+    margin-left: 15px;
+    font-size: 14px;
 }

@@ -22,9 +22,6 @@ img {
   width: 100%;
   height: auto; }
 
-.menu {
-  width: 500px; }
-
 .menu ul {
   display: flex;
   justify-content: center;
@@ -35,6 +32,11 @@ ul li a {
   color: #004289;
   text-decoration: none;
   font-family: "Montserrat", sans-serif; }
+
+.menu a {
+  font-weight: 500;
+  margin-left: 15px;
+  font-size: 14px; }
 
 .aboutUs {
   display: flex;
