@@ -37,11 +37,17 @@ $font-family-titulos: 'Montserrat', sans-serif;
     height: calc(634px - 80px);
     background-color: $fondo-header;
     padding: 20px 0px 20px 0; 
-    margin: 0 auto;
-} 
+    margin: 0 auto;  
+ }    
 
-.texto-header{
-    width: 555px;
+ .contenedor-header{
+    @include flex;
+    width: 80%;
+ }
+
+ .texto-header{
+    width: 50%;
+    flex:1;
     height: 171px;
     color:#fff;
     font-family: $font-family-titulos;
@@ -50,22 +56,21 @@ $font-family-titulos: 'Montserrat', sans-serif;
     line-height: 57.6px;  
     margin:0 0 40px 0; 
     h3{
-        width: 555px;
+    width: 555px;
         span{
-            color: #74b5fc;
-            text-decoration: underline;
+        color: #74b5fc;
+        text-decoration: underline;
         }
     }
 }
 
-.underline{
-    color:#74b5fc;
-    text-decoration: underline;
-    text-align: left;
-}
+span{
+    color: #74b5fc;
+    text-decoration: underline; 
+} 
 
 .img-header{
-    width: 555px;
+    width: 50%;
     height: 314px;
 }
 
@@ -74,8 +79,16 @@ img{
     height: auto;
 }
 
-.boton{
+.boton-get{
     @include boton;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    transition: all ease 0.5s;
+}
+
+.boton-our{
+    @include boton;
+    transition: all ease 0.5s;
 }
 
 .titulos {
@@ -97,8 +110,12 @@ img{
 
 // hovers
 
-.seccion-logo:hover{
-    background-color: #007bff;
-    color:#fff;
-    border: 2px solid #fff;
+.boton-get:hover{
+    @include boton;
 }
+
+.boton-our:hover{
+    background-color: #007bff;
+    border: 2px solid #007bff;
+}
+
