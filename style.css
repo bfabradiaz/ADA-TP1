@@ -15,6 +15,9 @@
   margin: 0 auto; }
 
 .logo-ada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 67px;
   height: 40px; }
 
@@ -48,8 +51,15 @@ ul li a {
   padding: 20px 0px 20px 0;
   margin: 0 auto; }
 
+.contenedor-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; }
+
 .texto-header {
-  width: 555px;
+  width: 50%;
+  flex: 1;
   height: 171px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -63,20 +73,19 @@ ul li a {
       color: #74b5fc;
       text-decoration: underline; }
 
-.underline {
+span {
   color: #74b5fc;
-  text-decoration: underline;
-  text-align: left; }
+  text-decoration: underline; }
 
 .img-header {
-  width: 555px;
+  width: 50%;
   height: 314px; }
 
 img {
   width: 100%;
   height: auto; }
 
-.boton {
+.boton-get {
   width: 172px;
   height: 45px;
   border: 2px solid #fff;
@@ -84,7 +93,21 @@ img {
   background-color: rgba(255, 255, 255, 0.089);
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 15px; }
+  font-size: 15px;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+  transition: all ease 0.5s; }
+
+.boton-our {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  transition: all ease 0.5s; }
 
 .titulos {
   font-family: "Montserrat", sans-serif;
@@ -101,10 +124,19 @@ img {
   font-family: "Open Sans", sans-serif;
   font-size: 15px; }
 
-.seccion-logo:hover {
-  background-color: #007bff;
+.boton-get:hover {
+  width: 172px;
+  height: 45px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.089);
   color: #fff;
-  border: 2px solid #fff; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px; }
+
+.boton-our:hover {
+  background-color: #007bff;
+  border: 2px solid #007bff; }
 
 .aboutUs {
   display: flex;
@@ -325,7 +357,8 @@ img {
   margin: 0 40px 40px 10px;
   padding: 30px 30px 30px 30px;
   border-radius: 10px;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: all 0.5s; }
 
 .card-logo {
   position: absolute;
@@ -350,6 +383,9 @@ img {
   font-family: "Open Sans", sans-serif;
   line-height: 24px;
   margin-left: 40px; }
+
+.card:hover {
+  transform: translateY(-10px); }
 
 .whyChooseUs {
   display: flex;
