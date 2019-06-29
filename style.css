@@ -665,52 +665,56 @@ ul li a {
   height: 362px;
   background-color: #004A99;
   margin: auto;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: baseline; }
 
-.wayne h3 {
-  font-size: 34px;
-  color: #FFFFFF;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400; }
+.wayne {
+  width: 380px; }
+  .wayne h3 {
+    font-size: 34px;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; }
+  .wayne p {
+    font-size: 13px;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #FFFFFF;
+    width: 350px; }
 
-.wayne p {
-  font-size: 13px;
-  line-height: 24px;
-  font-family: "Montserrat", sans-serif;
-  color: #FFFFFF;
-  width: 350px; }
-
-.subtitleFooter {
-  width: 160px;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #FFFFFF; }
+.usefullLinks {
+  width: 190px; }
 
 .subtitleFooter {
   width: 160px;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  margin-bottom: 30px; }
 
 .listadoPaginado {
   width: 160px;
   font-size: 14px;
   line-height: 21px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
   list-style: none; }
+  .listadoPaginado li {
+    margin-bottom: 15px; }
 
 .listadoDirecciones {
   width: 160px;
   font-size: 14px;
   line-height: 21px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
   list-style: none; }
+  .listadoDirecciones li {
+    margin-bottom: 15px; }
 
 .listadoNews {
   font-size: 13px;
@@ -723,6 +727,23 @@ ul li a {
   color: #FFFFFF;
   width: 165px;
   height: 33px; }
+
+.contact {
+  width: 300px; }
+
+.iconosContactUs {
+  display: flex;
+  list-style: none;
+  color: #007BFF; }
+  .iconosContactUs li {
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 10px; }
+  .iconosContactUs .iconify {
+    width: 36px;
+    height: 36px; }
 
 * {
   margin: 0;
