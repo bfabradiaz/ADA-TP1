@@ -16,6 +16,8 @@ $font-family-titulos: 'Montserrat', sans-serif;
     background-color: #FFFFFF;
     border-right: 1px solid #D6EAFF;
     border-bottom: 1px solid #D6EAFF;
+    transition: all ease;
+    transition-duration: 0.2s;  
 };
 
 .foto-Rectangular-All{
@@ -26,27 +28,39 @@ $font-family-titulos: 'Montserrat', sans-serif;
     margin: auto;
     padding: 30px 0;
     #foto-Rectangular-1{
-        background-image: url("img/clients/client-1.png")    
+        background-image: url("img/clients/client-1.png");
     };
     #foto-Rectangular-2{
-        background-image: url("img/clients/client-2.png")    
+        background-image: url("img/clients/client-2.png");
     };
     #foto-Rectangular-3{
-        background-image: url("img/clients/client-3.png")    
+        background-image: url("img/clients/client-3.png");    
     };
     #foto-Rectangular-4{
-        background-image: url("img/clients/client-4.png")    
+        background-image: url("img/clients/client-4.png");    
     };
     #foto-Rectangular-5{
-        background-image: url("img/clients/client-5.png")    
+        background-image: url("img/clients/client-5.png");    
     };
     #foto-Rectangular-6{
-        background-image: url("img/clients/client-6.png")    
+        background-image: url("img/clients/client-6.png");    
     };
     #foto-Rectangular-7{
-        background-image: url("img/clients/client-7.png")    
+        background-image: url("img/clients/client-7.png");    
     };
     #foto-Rectangular-8{
-        background-image: url("img/clients/client-8.png")    
+        background-image: url("img/clients/client-8.png");    
     };
 };
+
+//hover
+#foto-Rectangular-1:hover,
+#foto-Rectangular-2:hover,
+#foto-Rectangular-3:hover,
+#foto-Rectangular-4:hover,
+#foto-Rectangular-5:hover,
+#foto-Rectangular-6:hover,
+#foto-Rectangular-7:hover,
+#foto-Rectangular-8:hover,{
+    background-size: 65%; 
+}
