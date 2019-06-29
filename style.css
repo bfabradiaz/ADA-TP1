@@ -735,19 +735,18 @@ img {
   height: 362px;
   background-color: #004A99;
   margin: auto;
-  padding-top: 30px;
   display: flex;
   justify-content: center;
-  align-items: baseline; }
+  align-items: flex-start;
+  padding: 60px 0 30px 0; }
 
 .wayne {
-  width: 380px; }
+  width: 33,33%; }
   .wayne h3 {
     font-size: 34px;
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    margin-bottom: 20px; }
+    font-weight: 400; }
   .wayne p {
     font-size: 13px;
     line-height: 24px;
@@ -756,7 +755,7 @@ img {
     width: 350px; }
 
 .usefullLinks {
-  width: 190px; }
+  width: 16,66%; }
 
 .subtitleFooter {
   width: 160px;
@@ -798,8 +797,8 @@ img {
   width: 165px;
   height: 33px; }
 
-.contact {
-  width: 300px; }
+.contact .ourNewsletter {
+  width: 25%; }
 
 .iconosContactUs {
   display: flex;
