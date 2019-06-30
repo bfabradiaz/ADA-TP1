@@ -964,18 +964,6 @@ img {
     font-family: "Montserrat", sans-serif;
     font-size: 15px; }
 
-@media (max-width: 768px) {
-  .footer-content {
-    width: 90%; }
-  .wayne, .usefullLinks, .contact, .ourNewsletter {
-    width: 50%; } }
-
-@media (max-width: 360px) {
-  .footer-content {
-    width: 80%; }
-  .wayne, .usefullLinks, .contact, .ourNewsletter {
-    width: 100%; } }
-
 * {
   margin: 0;
   padding: 0;
