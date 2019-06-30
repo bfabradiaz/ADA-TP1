@@ -59,7 +59,6 @@ ul li a {
 
 .texto-header {
   width: 50%;
-  flex: 1;
   height: 171px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -138,6 +137,13 @@ img {
   background-color: #007bff;
   border: 2px solid #007bff; }
 
+@media (max-width: 768px) {
+  .contenedor-header {
+    flex-direction: column-reverse;
+    justify-content: center; }
+  .texto-header {
+    text-align: center; } }
+
 .aboutUs {
   display: flex;
   justify-content: center;
@@ -146,7 +152,7 @@ img {
   height: 1617px; }
 
 .contenedor-aboutUs {
-  width: 80%; }
+  max-width: 80%; }
 
 .aboutUs-contenedor1 {
   display: flex;
@@ -351,8 +357,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 80%;
-  height: 624px; }
+  max-width: 80%; }
 
 .card {
   position: relative;
@@ -394,6 +399,8 @@ img {
 
 .card:hover {
   transform: translateY(-10px); }
+  .card:hover .card-texto-titulos {
+    color: #007bff; }
 
 .whyChooseUs {
   display: flex;
@@ -444,7 +451,8 @@ img {
   height: 295px;
   margin: 30px 30px 30px 30px;
   border-radius: 10px;
-  background-color: #00458f; }
+  background-color: #00458f;
+  transition: all 0.5s; }
 
 .whyChooseUs-card-logo {
   display: flex;
@@ -487,6 +495,9 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600; }
+
+.whyChooseUs-card:hover {
+  background-color: #003b7a; }
 
 .whyChooseUs-contador {
   width: 100%;

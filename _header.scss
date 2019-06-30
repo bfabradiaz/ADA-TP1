@@ -47,7 +47,6 @@ $font-family-titulos: 'Montserrat', sans-serif;
 
  .texto-header{
     width: 50%;
-    flex:1;
     height: 171px;
     color:#fff;
     font-family: $font-family-titulos;
@@ -119,3 +118,15 @@ img{
     border: 2px solid #007bff;
 }
 
+// media queries
+
+@media (max-width:768px){
+    .contenedor-header{
+        flex-direction: column-reverse;
+        justify-content: center; 
+    }
+    .texto-header{
+        text-align:center;
+    
+    }
+}    

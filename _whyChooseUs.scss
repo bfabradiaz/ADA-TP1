@@ -55,6 +55,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     margin: 30px 30px 30px 30px;
     border-radius: 10px;
     background-color: #00458f;
+    transition: all 0.5s;
 }
 
 .whyChooseUs-card-logo{ 
@@ -96,6 +97,10 @@ $font-family-titulos: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
 }
+
+.whyChooseUs-card:hover{
+    background-color: #003b7a;
+}    
 
 // contador
 
