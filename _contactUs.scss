@@ -126,22 +126,22 @@ $font-family-titulos: 'Montserrat', sans-serif;
 
 .footer{
     background-color: #004A99;
-    height: 362px;
     width: 100%;
-    .footer-content{
-        background-color: #004A99;
-        width: 80%;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: auto;
-        padding: 60px 0 30px 0;
-    }
 }
 
+.footer-content{
+    background-color: #004A99;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    padding: 60px 0 30px 0;
+    flex-wrap: wrap;
+}
 
 .wayne{
-    width: 33,33%;
+    width: 33.33%;
     padding: 0 15px 30px 15px;
     h3{
         font-size: 34px;
@@ -156,12 +156,12 @@ $font-family-titulos: 'Montserrat', sans-serif;
         line-height: 24px;
         font-family: $font-family-titulos;
         color: #FFFFFF;
-        width: 350px;
+        width: 100%;
     }
 }
 
 .usefullLinks{
-    width: 16,66%;
+    width: 16.66%;
     padding-right: 60px;
     padding-left: 15px;
 }
@@ -201,7 +201,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     line-height: 22px;
     font-family: $font-family-parrafo;
     color: #FFFFFF;
-    width: 260px;
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -242,5 +242,23 @@ $font-family-titulos: 'Montserrat', sans-serif;
         color: #ffffff;
         font-family: $font-family-titulos;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content{
+        width: 90%; 
+    }
+    .wayne, .usefullLinks, .contact, .ourNewsletter{
+        width: 50%;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer-content{
+        width: 80%; 
+    }
+    .wayne, .usefullLinks, .contact, .ourNewsletter{
+        width: 100%;
     }
 }
