@@ -870,8 +870,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   margin: auto;
-  padding: 60px 0 30px 0;
-  flex-wrap: wrap; }
+  padding: 60px 0 30px 0; }
 
 .wayne {
   width: 33.33%;
@@ -925,7 +924,7 @@ img {
   line-height: 22px;
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
-  width: 100%;
+  width: 260px;
   margin-bottom: 30px; }
 
 .relleno {
@@ -963,6 +962,18 @@ img {
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 15px; }
+
+@media (max-width: 768px) {
+  .footer-content {
+    width: 90%; }
+  .wayne, .usefullLinks, .contact, .ourNewsletter {
+    width: 50%; } }
+
+@media (max-width: 360px) {
+  .footer-content {
+    width: 80%; }
+  .wayne, .usefullLinks, .contact, .ourNewsletter {
+    width: 100%; } }
 
 * {
   margin: 0;
