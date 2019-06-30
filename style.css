@@ -699,11 +699,16 @@ img {
   opacity: 1; }
 
 .ourClients {
+  display: flex;
+  justify-content: center;
   background-color: #ECF5FF;
-  padding: 60px 0; }
+  width: 100%; }
+  .ourClients .ourClientsView {
+    padding: 60px 0;
+    width: 80%; }
 
 .fotos-Rectangulares {
-  width: 277.25px;
+  width: 25%;
   height: 160px;
   background-position: center;
   padding: 64px;
@@ -716,7 +721,6 @@ img {
   transition-duration: 0.2s; }
 
 .foto-Rectangular-All {
-  width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -748,6 +752,14 @@ img {
 #foto-Rectangular-7:hover,
 #foto-Rectangular-8:hover {
   background-size: 65%; }
+
+@media (max-width: 768px) {
+  .fotos-Rectangulares {
+    width: 33%; } }
+
+@media (max-width: 360px) {
+  .fotos-Rectangulares {
+    width: 100%; } }
 
 .footer-1 {
   background-color: #00428a;
@@ -849,19 +861,20 @@ img {
 
 .footer {
   background-color: #004A99;
-  height: 362px;
   width: 100%; }
-  .footer .footer-content {
-    background-color: #004A99;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: auto;
-    padding: 60px 0 30px 0; }
+
+.footer-content {
+  background-color: #004A99;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  padding: 60px 0 30px 0;
+  flex-wrap: wrap; }
 
 .wayne {
-  width: 33,33%;
+  width: 33.33%;
   padding: 0 15px 30px 15px; }
   .wayne h3 {
     font-size: 34px;
@@ -875,10 +888,10 @@ img {
     line-height: 24px;
     font-family: "Montserrat", sans-serif;
     color: #FFFFFF;
-    width: 350px; }
+    width: 100%; }
 
 .usefullLinks {
-  width: 16,66%;
+  width: 16.66%;
   padding-right: 60px;
   padding-left: 15px; }
 
@@ -912,7 +925,7 @@ img {
   line-height: 22px;
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
-  width: 260px;
+  width: 100%;
   margin-bottom: 30px; }
 
 .relleno {
@@ -950,6 +963,18 @@ img {
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 15px; }
+
+@media (max-width: 768px) {
+  .footer-content {
+    width: 90%; }
+  .wayne, .usefullLinks, .contact, .ourNewsletter {
+    width: 50%; } }
+
+@media (max-width: 360px) {
+  .footer-content {
+    width: 80%; }
+  .wayne, .usefullLinks, .contact, .ourNewsletter {
+    width: 100%; } }
 
 * {
   margin: 0;
