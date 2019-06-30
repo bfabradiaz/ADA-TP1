@@ -840,7 +840,7 @@ img {
 
 .usefullLinks {
   width: 16,66%;
-  padding-right: 50px;
+  padding-right: 60px;
   padding-left: 15px; }
 
 .subtitleFooter {
@@ -852,7 +852,7 @@ img {
 
 .listadoPaginado {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
   list-style: none; }
@@ -870,10 +870,10 @@ img {
 
 .listadoNews {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
   font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
-  width: 300px;
+  width: 260px;
   margin-bottom: 30px; }
 
 .relleno {
@@ -890,18 +890,16 @@ img {
 .iconosContactUs {
   display: flex;
   list-style: none;
-  color: #007BFF; }
+  color: #FFFFFF; }
   .iconosContactUs li {
     width: 36px;
     height: 36px;
-    background-color: #FFFFFF;
+    background-color: #007BFF;
     border-radius: 50%;
-    border: 0 solid #007BFF;
     margin-right: 10px;
-    box-sizing: content-box; }
-  .iconosContactUs .iconify {
-    width: 36px;
-    height: 36px; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .form-news {
   display: flex; }
