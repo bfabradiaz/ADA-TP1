@@ -8,6 +8,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
 }
+
 .viewport{
     width:100%;
     margin: 0 auto;
@@ -16,7 +17,6 @@ $font-family-titulos: 'Montserrat', sans-serif;
     background-color: #ffffff;
     z-index: 2;
 }
-
 
 .container-nav{
     width:80%;
@@ -28,6 +28,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
 }
       
 .logo-ada{
+    @include flex;
     width: 67px;
     height: 40px;
 }    

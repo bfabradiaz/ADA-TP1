@@ -62,7 +62,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     padding: 30px 30px 30px 30px;
     border-radius: 10px;
     background-color: #fff;
-
+    transition: all 0.5s;
 }
 
 .card-logo{ 
@@ -79,8 +79,6 @@ $font-family-titulos: 'Montserrat', sans-serif;
     height: 80px;
 }
 
-
-
 .card-texto-titulos{
     font-size: 18px;
     font-weight: 600;
@@ -95,4 +93,10 @@ $font-family-titulos: 'Montserrat', sans-serif;
     font-family: $font-family-parrafo;
     line-height: 24px;
     margin-left:40px;
+}
+
+//hover
+
+.card:hover{
+    transform: translateY(-10px);
 }
