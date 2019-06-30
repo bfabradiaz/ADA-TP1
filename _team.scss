@@ -1,8 +1,6 @@
 $font-family-parrafo: 'Open Sans', sans-serif;
 $font-family-titulos: 'Montserrat', sans-serif;
 
-
-
 @mixin flex {
     display: flex;
     justify-content: center;
@@ -16,7 +14,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
     background-size: cover;
     background-position: center;
     margin: 20px 15px;
-    //
+
 }
 
 .team{
@@ -42,3 +40,36 @@ $font-family-titulos: 'Montserrat', sans-serif;
     };
 };
 
+.fotoRedondaInfo{
+    opacity: 0;
+    width: 255px;
+    height: 255px;
+    border-radius: 127.5px;
+    background-color: #004A9990;
+    text-align: center;
+    font-family: $font-family-parrafo;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    h4{
+        font-weight: 700;
+        font-size: 18px;
+    }
+    h5{
+        font-style: italic;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .iconosTeamContact{
+        margin-top: 18px;
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+}
+
+.fotoRedondaInfo:hover{
+    opacity: 1;
+}

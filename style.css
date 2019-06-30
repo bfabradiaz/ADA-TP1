@@ -594,6 +594,35 @@ img {
     .team .fotos-Circulares #foto-Redonda-4 {
       background-image: url("img/team-04.jpg"); }
 
+.fotoRedondaInfo {
+  opacity: 0;
+  width: 255px;
+  height: 255px;
+  border-radius: 127.5px;
+  background-color: #004A9990;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s; }
+  .fotoRedondaInfo h4 {
+    font-weight: 700;
+    font-size: 18px; }
+  .fotoRedondaInfo h5 {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400; }
+  .fotoRedondaInfo .iconosTeamContact {
+    margin-top: 18px;
+    color: #FFFFFF;
+    font-size: 18px; }
+
+.fotoRedondaInfo:hover {
+  opacity: 1; }
+
 .ourClients {
   background-color: #ECF5FF;
   padding: 60px 0; }
