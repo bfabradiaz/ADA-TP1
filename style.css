@@ -145,6 +145,9 @@ img {
   flex-direction: column;
   height: 1617px; }
 
+.contenedor-aboutUs {
+  width: 80%; }
+
 .aboutUs-contenedor1 {
   display: flex;
   justify-content: center;
@@ -208,7 +211,8 @@ img {
   color: #007bff;
   border: 2px solid #007bff;
   border-radius: 50%;
-  margin-right: 20px; }
+  margin-right: 20px;
+  transition: all ease 0.5s; }
 
 .seccion-texto {
   height: 80px; }
@@ -304,6 +308,10 @@ img {
 .contenedor3-caja2-imagen {
   width: 100%;
   height: auto; }
+
+.seccion-logo:hover {
+  background-color: #007bff;
+  color: #fff; }
 
 .services {
   display: flex;
@@ -481,7 +489,27 @@ img {
   font-weight: 600; }
 
 .whyChooseUs-contador {
-  height: 113px; }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+
+.contenedor-cajas {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center; }
+
+.whyChooseUs-caja {
+  width: 25%;
+  color: #ffffff; }
+  .whyChooseUs-caja h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px; }
+  .whyChooseUs-caja p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px; }
 
 .portfolio-1 {
   height: 1115px;

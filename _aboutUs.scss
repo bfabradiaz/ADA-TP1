@@ -36,6 +36,10 @@ $font-family-titulos: 'Montserrat', sans-serif;
     height: 1617px; 
 }
 
+.contenedor-aboutUs{
+    width: 80%;
+}
+
 // Comienzo de About us primer contenedor
 .aboutUs-contenedor1{
     @include flex;
@@ -89,6 +93,7 @@ $font-family-titulos: 'Montserrat', sans-serif;
 
 .seccion-logo{
     @include aboutUs-logos;
+    transition: all ease 0.5s;
 }
 
 .seccion-texto{
@@ -201,3 +206,9 @@ $font-family-titulos: 'Montserrat', sans-serif;
     height: auto;
 }
 
+// hovers
+
+.seccion-logo:hover{
+    background-color: #007bff;
+    color: #fff;
+}
