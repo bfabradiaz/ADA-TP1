@@ -501,3 +501,13 @@ input[type=submit] {
         margin-bottom: 30px;
     }
  }
+ @media screen and (max-width: 320px) {
+   #botonera ul li{
+       width:50px;
+       height: 50px;
+       font-size: 12px;
+       -webkit-border-radius: 50px;
+       -moz-border-radius: 50px;
+       border-radius: 50px;
+   }
+ }
